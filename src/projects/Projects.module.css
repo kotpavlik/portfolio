@@ -16,8 +16,13 @@
 .projects {
     margin: 10px 0;
     border: 1px solid deeppink;
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content:space-around ;
+    justify-content:space-between ;
     flex-wrap: wrap;
+}
+@media screen and (max-width: 400px) {
+    .projectContainer{
+        flex-direction: row;
+    }
 }

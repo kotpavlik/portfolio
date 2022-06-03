@@ -1,0 +1,6 @@
+.navigation_flex{
+    border: 1px solid;
+    width: 300px;
+    display: flex;
+    justify-content:space-around;
+}

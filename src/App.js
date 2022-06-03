@@ -3,6 +3,8 @@ import {Header} from "./header/Header";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
 import {Projects} from "./projects/Projects";
+import {DistantWork} from "./distant_work/DistantWork";
+import {Contacts} from "./contacts/Contacts";
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
             <Main/>
             <Skills/>
             <Projects/>
+            <DistantWork/>
+            <Contacts/>
         </div>
     );
 }

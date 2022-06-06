@@ -15,9 +15,9 @@
     justify-content: center;
     align-items:center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .image {
-        width: 300px;
+        width: 280px;
         height: 180px;
     }
 }

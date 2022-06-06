@@ -1,5 +1,4 @@
 .projects_block{
-    min-height: 100vh;
     background-color: #d22fff;
 }
 
@@ -16,13 +15,14 @@
 .projects {
     margin: 10px 0;
     border: 1px solid deeppink;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content:space-between ;
     flex-wrap: wrap;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .projectContainer{
         flex-direction: row;
+        justify-content:center ;
     }
 }

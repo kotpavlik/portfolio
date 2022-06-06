@@ -5,9 +5,12 @@ import {Skill} from "./skill/Skill";
 
 export const Skills = () => {
     const title =[
-        {title:'JS',description:'more methods.'},
-        {title:'CSS',description:'scss, module, bootstrap, ant design, material ui  '},
-        {title:'REACT',description:'hooks , hoc , props'}
+        {id:1,title:'JS',description:'more methods.'},
+        {id:2,title:'CSS',description:'scss, module, bootstrap, ant design, material ui  '},
+        {id:3,title:'REACT',description:'hooks , hoc , props'},
+        {id:3,title:'REDUX',description:'thunk , reducers , create store'},
+        {id:3,title:'SCSS',description:'bam '},
+        {id:3,title:'NODE.JS',description:'API , express , async'}
     ]
     return (
         <div className={style.skills_block}>
@@ -16,7 +19,7 @@ export const Skills = () => {
                 <div className={style.skills}>
                     {title.map((e) => {
                         return (
-                            <Skill title={e.title} description={e.description}/>
+                            <Skill title={e.title} description={e.description} key={e.id}/>
                         )})}
                 </div>
             </div>

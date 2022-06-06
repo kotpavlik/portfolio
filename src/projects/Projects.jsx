@@ -5,8 +5,8 @@ import {Project} from "./project/Project";
 
 export const Projects = () => {
     const myProjects = [
-        {name:'Social networks',description:'more fonts about my project'},
-        {name:'Todo List ',description:'more fonts about my project'},
+        {id:1,name:'Social networks',description:'more fonts about my project'},
+        {id:2,name:'Todo List ',description:'more fonts about my project'},
 
     ]
     return (
@@ -15,7 +15,7 @@ export const Projects = () => {
                 <h2 className={style.title}> My projects</h2>
                 <div className={style.projects}>{myProjects.map((p) => {
                     return (
-                        <Project projectName={p.name} projectDescription={p.description}/>
+                        <Project projectName={p.name} projectDescription={p.description} key={p.id}/>
                     )
                 })}</div>
             </div>

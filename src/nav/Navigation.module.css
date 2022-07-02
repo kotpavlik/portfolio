@@ -1,6 +1,23 @@
 .navigation_flex{
-    border: 1px solid;
-    width: 300px;
+    width: 400px;
     display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+}
+
+.navigation_flex_burger {
+    display: flex;
+    flex-direction:column;
     justify-content:space-around;
+    align-items:center;
+    padding: 100px 0 0 0;
+    height: 70%;
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.navigation_flex_burger a {
+    color: #fff;
+
+
 }

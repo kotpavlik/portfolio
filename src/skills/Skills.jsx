@@ -8,9 +8,9 @@ export const Skills = () => {
         {id:1,title:'JS',description:'more methods.'},
         {id:2,title:'CSS',description:'scss, module, bootstrap, ant design, material ui  '},
         {id:3,title:'REACT',description:'hooks , hoc , props'},
-        {id:3,title:'REDUX',description:'thunk , reducers , create store'},
-        {id:3,title:'SCSS',description:'bam '},
-        {id:3,title:'NODE.JS',description:'API , express , async'}
+        {id:4,title:'REDUX',description:'thunk , reducers , create store'},
+        {id:5,title:'SCSS',description:'bam '},
+        {id:6,title:'NODE.JS',description:'API , express , async'}
     ]
     return (
         <div className={style.skills_block}>

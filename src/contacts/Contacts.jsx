@@ -5,7 +5,7 @@ import button from '../common/styles/button.module.css'
 
 export const Contacts = () => {
     return (
-        <div className={style.contacts_block}>
+        <div className={style.contacts_block} id="contacts">
             <div className={`${contacts_container.container} ${style.contacts}`}>
                 <h2 className={style.title}>Contacts</h2>
                 <form action="" className={style.form}>

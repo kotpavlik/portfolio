@@ -1,18 +1,26 @@
 import React from 'react';
-import style from './Main.module.css'
+import style from './Main.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
+import full_screen_photo from '../assets/fuul_screen.JPG'
+import {ProjectButton} from '../components/projectButton'
+import {Link} from "react-scroll";
 
 
 export const Main = () => {
+    const full_screen = {
+        backgroundImage: `url(${full_screen_photo})`,
+    }
+
+
     return (
-        <div className={style.main}>
+        <div style={full_screen} className={style.main} id="home">
             <div className={styleContainer.container}>
                 <div className={style.text}>
                     <span>Hi there</span>
                     <h1> I am Igor Anufriev</h1>
                     <p> Frontend developer</p>
+                    <ProjectButton name={<Link to="projects" spy={true} smooth={true} offset={-80} duration={500} >view my projects</Link>}/>
                 </div>
-                <div className={style.photo}></div>
             </div>
         </div>
     );

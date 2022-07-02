@@ -13,7 +13,7 @@ export const Skills = () => {
         {id:6,title:'NODE.JS',description:'API , express , async'}
     ]
     return (
-        <div className={style.skills_block}>
+        <div className={style.skills_block} id="skills">
             <div className={`${styleContainer.container} ${style.skills_container}`}>
                 <h2 className={style.title}>Skills</h2>
                 <div className={style.skills}>

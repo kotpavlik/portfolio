@@ -1,0 +1,49 @@
+@import '../common/styles/variables';
+@import '../common/styles/mixins';
+
+.skills_block{
+    position: relative;
+    padding: 6.5rem 0;
+    overflow: hidden;
+    margin-bottom: 1.5rem!important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .skills_container {
+        align-items:center;
+        flex-direction: column;
+        justify-content: flex-start;
+        .title{
+            @include tittle(relative,visible,$title-weight,$title-font-size,1rem !important,1.4em,pointer);
+            &::after {
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $primary-color;
+                content: "";
+                transition: width 0.3s ease-out;
+            }
+            &:hover:after,&:focus:after {
+                width: 100%;
+            }
+        }
+        .skills{
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 625px) {
+            .skills{
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+

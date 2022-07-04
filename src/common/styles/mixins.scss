@@ -1,0 +1,15 @@
+@import './variables';
+
+@mixin arrow($left,$transform) {
+  left: $left;
+  transform: $transform;
+}
+@mixin tittle($position,$visibility,$fontWeight,$fontSize,$margin,$lineHeight,$cursor) {
+  position: $position;
+  visibility: $visibility;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  margin: $margin;
+  line-height: $lineHeight;
+  cursor: $cursor;
+}

@@ -1,38 +1,152 @@
 @import '../common/styles/variables';
+@import '../common/styles/mixins';
 
 .main {
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center -9.5px;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        background-color: rgba(96, 92, 92, 0.42);
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center -9.5px;
+  position: relative;
+
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(96, 92, 92, 0.42);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .text {
+    width: 80vw;
+    color: $textColor;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    bottom:80px;
+    width: 30px;
+    height: 20px;
+    left: 49%;
+    z-index: 2;
+    -webkit-animation: tilt-in-top-2 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: tilt-in-top-2 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+
+    @-webkit-keyframes tilt-in-top-2 {
+      0% {
+        -webkit-transform: rotateY(-50deg) translateY(-100px) skewY(30deg);
+        transform: rotateY(-50deg) translateY(-100px) skewY(30deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+        transform: rotateY(0deg) translateY(50px) skewY(0deg);
+        opacity: 1;
+      }
     }
-    .text {
-        width: 80vw;
-        color: $textColor;
-        font-size:25px;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 1.5;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        z-index: 1;
-    }
-    h1{
-        font-size: 80px;
+    @keyframes tilt-in-top-2 {
+      0% {
+        -webkit-transform: rotateY(-30deg) translateY(-100px) skewY(30deg);
+        transform: rotateY(-30deg) translateY(-100px) skewY(30deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+        transform: rotateY(0deg) translateY(50px) skewY(0deg);
+        opacity: 1;
+      }
     }
 
+    &::after, &::before {
+      content: "";
+      background-color: $textColor;
+      position: absolute;
+      left: 0px;
+      border-radius: 5px 0 0 5px;
+      width: 50%;
+      height: 4px;
+      transition: all 0.2s;
+    }
+
+    &::after {
+      top: 20px;
+      @include arrow(12px, rotate(140deg))
+    }
+
+    &::before {
+      bottom: -4px;
+      @include arrow(3px, rotate(40deg))
+    }
+
+    span {
+      position: absolute;
+      background-color: $textColor;
+      left: 3px;
+      width: 80%;
+      height: 5px;
+      border-radius: 5px 0 0 5px;
+      top: 9px;
+      transition: all 0.2s;
+      transform: rotate(90deg);
+
+    }
+
+  }
+}
+@media screen and ( max-width: 760px) {
+  .arrow {
+
+    -webkit-animation: tilt-in-top-2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: tilt-in-top-2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+
+    @-webkit-keyframes tilt-in-top-2 {
+      0% {
+        -webkit-transform: rotateY(-50deg) translateY(-20px) skewY(30deg);
+        transform: rotateY(-50deg) translateY(-20px) skewY(30deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+        transform: rotateY(0deg) translateY(50px) skewY(0deg);
+        opacity: 1;
+      }
+    }
+    @keyframes tilt-in-top-2 {
+      0% {
+        -webkit-transform: rotateY(-30deg) translateY(-100px) skewY(30deg);
+        transform: rotateY(-30deg) translateY(40px) skewY(30deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateY(0deg) translateY(-100px) skewY(0deg);
+        transform: rotateY(0deg) translateY(60px) skewY(0deg);
+        opacity: 1;
+      }
+    }
+  }
 }
 
 

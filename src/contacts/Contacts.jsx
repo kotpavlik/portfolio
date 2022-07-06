@@ -41,7 +41,7 @@ export const Contacts = () => {
                     <h2 className={style.title}>your contacts</h2>
                     <form className={style.form}>
                         <div className={style.inp_wrapper}>
-                            <label className={style.label} htmlFor="email">Email Address : </label>
+                            <label className={style.label} htmlFor="email">Your Email Address: </label>
                             <input
                                 placeholder={'your_boss@gmail.com'}
                                 id="email"
@@ -49,7 +49,7 @@ export const Contacts = () => {
                                 type="email"
                                 onChange={formik.handleChange}
                                 value={formik.values.email}
-                                className={style.inp}
+                                className={formik.values.email.length > 0 ? `${style.inp} ${style.inp_border}`: style.inp}
                             />
                             {formik.touched.email && formik.errors.email ? (
                                 <div className={style.validation}>{formik.errors.email}</div>
@@ -64,14 +64,14 @@ export const Contacts = () => {
                                 type="phone_number"
                                 onChange={formik.handleChange}
                                 value={formik.values.phone_number}
-                                className={style.inp}
+                                className={formik.values.phone_number.length > 0 ? `${style.inp} ${style.inp_border}`: style.inp}
                             />
                             {formik.touched.phone_number && formik.errors.phone_number ? (
                                 <div className={style.validation}>{formik.errors.phone_number}</div>
                             ) : null}
                         </div>
                         <div className={style.inp_wrapper}>
-                            <label className={style.label} htmlFor="first_name">Your Name : </label>
+                            <label className={style.label} htmlFor="first_name">What is Your Name: </label>
                             <input
                                 placeholder={'Boss'}
                                 id="first_name"
@@ -79,14 +79,14 @@ export const Contacts = () => {
                                 type="first_name"
                                 onChange={formik.handleChange}
                                 value={formik.values.first_name}
-                                className={style.inp}
+                                className={formik.values.first_name.length > 0 ? `${style.inp} ${style.inp_border}`: style.inp}
                             />
                             {formik.touched.first_name && formik.errors.first_name ? (
                                 <div className={style.validation}>{formik.errors.first_name}</div>
                             ) : null}
                         </div>
                         <div className={style.inp_wrapper}>
-                            <label className={style.label} htmlFor="comments">Comments : </label>
+                            <label className={style.label} htmlFor="comments">How can I Help you?: </label>
                             <input
                                 placeholder={'ask me ...'}
                                 id="comments"
@@ -94,7 +94,7 @@ export const Contacts = () => {
                                 type="comments"
                                 onChange={formik.handleChange}
                                 value={formik.values.comments}
-                                className={style.inp}
+                                className={formik.values.comments.length > 0 ? `${style.inp} ${style.inp_border}`: style.inp}
                             />
                             {formik.touched.comments && formik.errors.comments ? (
                                 <div className={style.validation}>{formik.errors.comments}</div>

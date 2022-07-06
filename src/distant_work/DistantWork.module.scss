@@ -1,0 +1,52 @@
+@import '../common/styles/mixins';
+@import '../common/styles/variables';
+
+.distant_work_block {
+  height: 60vh;
+  @include bg_screen(cover,no-repeat,fixed,center -9.5px,relative);
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(96, 92, 92, 0.42);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .distant_work {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    color: #fff;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 1;
+    .title {
+      @include tittle(relative, visible, $title-weight, $title-font-size, 1rem !important, 1.4em, pointer);
+      &::after {
+        display: block;
+        position: absolute;
+        right: 50%;
+        width: 0;
+        height: 2px;
+        background-color: $primary-color;
+        content: "";
+        transition: width 0.3s ease-out;
+        transform: translate(50%, -50%);
+        bottom: -10px;
+      }
+      &:hover:after, &:focus:after {
+        transform: translate(50%, -50%);
+        bottom: -10px;
+        width: 10vh;
+      }
+    }
+  }
+
+}
+

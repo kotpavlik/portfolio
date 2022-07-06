@@ -45,6 +45,7 @@ button,
 textarea {
   font-family: inherit;
   resize: none;
+
 }
 
 input::-ms-clear {
@@ -97,3 +98,5 @@ code {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+

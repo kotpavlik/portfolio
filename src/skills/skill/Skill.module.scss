@@ -1,4 +1,5 @@
 @import '../../common/styles/variables';
+@import '../../common/styles/mixins';
 
 .skill{
     width: 250px;
@@ -24,13 +25,12 @@
         }
     }
     .title{
+        color: $textColorDark;
         margin: 10px 0;
     }
     .description{
         text-align: center;
-        color: rgba(0, 0, 0, 0.53);
-        line-height: 1.4em;
-        margin: 10px 0;
+        @include description(rgba(0, 0, 0, 0.53),1.4em,10px 0);
         .list {
             .list_item{
 

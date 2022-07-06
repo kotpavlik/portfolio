@@ -13,3 +13,17 @@
   line-height: $lineHeight;
   cursor: $cursor;
 }
+
+@mixin description($color,$lineHeight,$margin) {
+  color: rgba(0, 0, 0, 0.53);
+  line-height: 1.4em;
+  margin: 10px 0;
+}
+
+@mixin bg_screen($backgroundSize,$backgroundRepeat,$backgroundAttachment,$backgroundPosition,$position){
+  background-size: $backgroundSize;
+  background-repeat: $backgroundRepeat;
+  background-attachment: $backgroundAttachment;
+  background-position: $backgroundPosition;
+  position: $position;
+}

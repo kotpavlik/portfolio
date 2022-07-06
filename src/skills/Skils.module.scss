@@ -16,6 +16,7 @@
         justify-content: flex-start;
         .title{
             @include tittle(relative,visible,$title-weight,$title-font-size,1rem !important,1.4em,pointer);
+            color: $textColorDark;
             &::after {
                 display: block;
                 position: absolute;

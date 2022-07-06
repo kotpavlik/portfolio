@@ -1,15 +1,20 @@
 import React from 'react';
-import style from './Project.module.css'
-import buttonStyle from '../../common/styles/button.module.css'
+import style from './Project.module.scss'
+import {ProjectButton} from '../../components/projectButton'
 
-export const Project = (props) => {
+
+export const Project = ({projectName,projectDescription,project_photo,gh_pages}) => {
+const bgc_project = {
+    backgroundImage:`url(${project_photo})`
+}
     return (
         <div className={style.project}>
-            <div className={style.image}>
-                <button className={` ${buttonStyle.button} ${style.butt}`}>look</button>
+            <div style={bgc_project} className={style.image}>
+
+                <a href={gh_pages}><ProjectButton name={'look'}/></a>
             </div>
-            <h3 className={style.title}>{props.projectName}</h3>
-            <span className={style.description}>{props.projectDescription}</span>
+            <h3 className={style.title}>{projectName}</h3>
+            <span className={style.description}>{projectDescription}</span>
         </div>
     );
 };

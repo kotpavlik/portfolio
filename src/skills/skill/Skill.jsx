@@ -13,9 +13,7 @@ export const Skill = ({title,description,skill_photo}) => {
             <h3 className={style.title}>{title}</h3>
             <span className={style.description}>
                 {
-
                     description.map((el) => {
-
                         return (
                             <ul className={style.list} key={el}>
                                 <li className={style.list_item}>{el}</li>

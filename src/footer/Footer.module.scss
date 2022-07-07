@@ -1,0 +1,59 @@
+@import '../common/styles/variables';
+@import '../common/styles/mixins';
+
+
+.footer_block {
+    height: 40vh;
+    .contain_footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        justify-content:space-between;
+        align-items: center;
+        margin: 0 0 10px 0;
+        .title{
+            @include tittle(relative, visible, $title-weight, $title-font-size, 1rem !important, 1.4em, pointer);
+            &::after {
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $primary-color;
+                content: "";
+                transition: width 0.3s ease-out;
+            }
+            &:hover:after, &:focus:after {
+                width: 100%;
+            }
+        }
+        .wrapper {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            .obj {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                img {
+                    position: absolute;
+                    right: 0;
+                    width: 50px;
+                }
+            }
+            @media screen and (max-width: 1200px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+
+
+

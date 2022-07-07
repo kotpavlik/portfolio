@@ -6,6 +6,7 @@ import {useFormik} from "formik";
 import * as Yup from 'yup';
 import {ContactsAnimation} from "../components/lottie/lottie_animation";
 import 'react-phone-number-input/style.css';
+import axios from 'axios';
 
 
 export const Contacts = () => {
@@ -30,6 +31,7 @@ export const Contacts = () => {
 
         }),
         onSubmit: values => {
+            axios.post('http://51.15.230.35:3228', values)
             alert(JSON.stringify(values, null, 2));
         },
     });

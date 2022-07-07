@@ -12,12 +12,12 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border-bottom: 2px solid black !important;
   -webkit-text-fill-color: inherit;
-  -webkit-box-shadow: 0 0 0px 1000px #f5df4e inset;
+  -webkit-box-shadow: 0 0 0px 1000px #f5e480 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 .contacts_block {
-  background-color: #f5df4e !important;
+  background-color: #f5e480 !important;
   display: flex;
   padding: 1.5em 0 !important;
 

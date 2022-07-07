@@ -39,6 +39,9 @@
     flex-wrap: wrap;
     padding: 2rem 0;
   }
+  @media screen and (max-width: 1000px) {
+    .projects {justify-content:center;}
+  }
 
 }
 

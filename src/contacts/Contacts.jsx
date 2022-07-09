@@ -32,7 +32,6 @@ export const Contacts = () => {
         }),
         onSubmit: values => {
             axios.post('http://51.15.230.35:3228', values)
-            alert(JSON.stringify(values, null, 2));
         },
     });
 

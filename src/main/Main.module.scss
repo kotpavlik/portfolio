@@ -121,6 +121,10 @@
   }
 }
 @media screen and ( max-width: 760px) {
+  .main {
+    @include bg_screen(cover, no-repeat, scroll, center 0px, relative);
+  }
+
   .arrow {
 
     -webkit-animation: tilt-in-top-2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

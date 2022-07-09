@@ -49,4 +49,9 @@
   }
 
 }
+@media screen and (max-width:760px){
+  .distant_work_block {
+    @include bg_screen(cover, no-repeat, scroll, center 0px, relative);
+  }
+}
 

@@ -9,6 +9,8 @@ import sass_svg from '../assets/skills_svg/sass-svgrepo-com.svg'
 import node_js_svg from '../assets/skills_svg/node-svgrepo-com.svg'
 import css_svg from '../assets/skills_svg/css-svgrepo-com.svg'
 import ts_svg from '../assets/skills_svg/typescript-official-svgrepo-com.svg'
+import postman_svg from '../assets/skills_svg/postman_ico.svg'
+
 
 
 export const Skills = () => {
@@ -52,7 +54,7 @@ export const Skills = () => {
         {
             id: 5,
             title: 'SCSS',
-            description: ['bam','variables','mixins'],
+            description: ['bem','variables','mixins'],
             skill_photo: `${sass_svg}`
         },
         {
@@ -66,6 +68,12 @@ export const Skills = () => {
             title: 'TypeScript',
             description: ['react types','redux types'],
             skill_photo: `${ts_svg}`
+        },
+        {
+            id: 8,
+            title: 'Postman',
+            description: ['check request for endpoint','working with authorization api-key','create variables'],
+            skill_photo: `${postman_svg}`
         }
     ]
     return (<div className={style.skills_block} id="skills">

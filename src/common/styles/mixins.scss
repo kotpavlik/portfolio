@@ -15,9 +15,9 @@
 }
 
 @mixin description($color,$lineHeight,$margin) {
-  color: rgba(0, 0, 0, 0.53);
-  line-height: 1.4em;
-  margin: 10px 0;
+  color: $color;
+  line-height: $lineHeight;
+  margin: $margin;
 }
 
 @mixin bg_screen($backgroundSize,$backgroundRepeat,$backgroundAttachment,$backgroundPosition,$position){

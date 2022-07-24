@@ -32,11 +32,8 @@
   }
 
   .projects {
-    margin: 10px 0;
+    margin: 10px auto;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     padding: 2rem 0;
   }
   @media screen and (max-width: 1000px) {

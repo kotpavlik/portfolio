@@ -5,6 +5,7 @@ import {Project} from './project/Project'
 import todo_list from '../assets/projects_photo/todo_list.png'
 import social_network from '../assets/projects_photo/social_network.png'
 import portfolio from '../assets/projects_photo/portfolio.png'
+import tg_bot from '../assets/projects_photo/tg_bot.png'
 
 export const Projects = () => {
 
@@ -35,11 +36,21 @@ export const Projects = () => {
             name: 'Portfolio',
             description: 'This rect application is written so that you can learn more about me and hire me. Uses smooth scrolling and swiper. With an adaptive for different devices and a burger menu for phones. This application shows more of my work with styles and adaptation',
             project_photo: `${portfolio}`,
-            gh_pages:'https://kotpavlik.github.io/portfolio/',
+            gh_pages:'https://portfolio-with-tg-bot.herokuapp.com/',
             gh_code:'https://github.com/kotpavlik/portfolio',
             title:'Used Technologies',
             technologies:'React, Lottie animation, formik, uyp, gh-pages, SASS, React-scroll , React-spring, Swiper'
         },
+        {
+            id: 4,
+            name: 'Telegram Bot For Portfolio Formik',
+            description: 'The Telegram bot was created to capture and send the data of potential employers to me in Telegram. Also, a simple game is written in the bot, if you are bored.',
+            project_photo: `${tg_bot}`,
+            gh_pages:'https://telegram-bot-for-portfolio.herokuapp.com/',
+            gh_code:'https://github.com/kotpavlik/telegram_bot',
+            title:'Used Technologies',
+            technologies:'Node.js, nodemon, express, node-telegram-bot-api, cors, body-parser'
+        }
 
     ]
     return (

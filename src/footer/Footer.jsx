@@ -28,7 +28,7 @@ export const Footer = () => {
                             return (
                                 <a key={img.id} href={img.link}>
                                     <div className={style.obj}>
-                                        <img src={img.photo} alt="photo"/>
+                                        <img src={img.photo} alt="social network"/>
                                     </div>
                                 </a>
                             )

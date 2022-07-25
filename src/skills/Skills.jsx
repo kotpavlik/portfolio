@@ -45,7 +45,7 @@ export const Skills = () => {
         description: ['express - learn now', 'async - learn now'],
         skill_photo: `${node_js_svg}`
     }, {
-        id: 94, title: 'TypeScript', description: ['react types', 'redux types'], skill_photo: `${ts_svg}`
+        id: 94, title: 'TypeScript', description: ['react types', 'redux types', 'used generic'], skill_photo: `${ts_svg}`
     }, {
         id: 93,
         title: 'Postman',

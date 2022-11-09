@@ -1,8 +1,16 @@
+@import '../common/styles/variables';
+
 .navigation_flex{
     width: 400px;
     display: flex;
     justify-content:space-between;
     font-size: 20px;
+    .active{
+        color:$primary-color;
+    }
+    .activeFullTop{
+        color: red;
+    }
 }
 @media screen and ( max-width: 760px) {
     .navigation_flex_burger {
@@ -15,6 +23,9 @@
         width: 100%;
         font-size: 30px;
         text-transform: uppercase;
+        .activeFullTop{
+            color:$primary-color;
+        }
     }
 
     .navigation_flex_burger a {

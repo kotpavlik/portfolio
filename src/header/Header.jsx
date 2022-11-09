@@ -33,7 +33,7 @@ export const Header = () => {
                     <span></span>
                 </div>
                 <div className={burger ? `${style.wrapper} ${style.wrapper_on}` : style.wrapper}>
-                    <Navigation burger={burger} setBurger={setBurger}/>
+                    <Navigation burger={burger} setBurger={setBurger} nav={nav}/>
                 </div>
             </div>
 

@@ -15,11 +15,13 @@ import "swiper/scss";
 import "swiper/scss/effect-coverflow";
 import "swiper/scss/pagination";
 import 'swiper/scss';
+import Zoom from "react-reveal/Zoom";
+import Flip from "react-reveal/Flip";
 
 
 export const Skills = () => {
     const [desc, setDesc] = useState(0)
-    const [display,setDisplay] = useState(false)
+    const [display, setDisplay] = useState(false)
     const title = [{
         id: 99,
         title: 'JS',
@@ -45,7 +47,10 @@ export const Skills = () => {
         description: ['express - learn now', 'async - learn now'],
         skill_photo: `${node_js_svg}`
     }, {
-        id: 94, title: 'TypeScript', description: ['react types', 'redux types', 'used generic'], skill_photo: `${ts_svg}`
+        id: 94,
+        title: 'TypeScript',
+        description: ['react types', 'redux types', 'used generic'],
+        skill_photo: `${ts_svg}`
     }, {
         id: 93,
         title: 'Postman',
@@ -61,7 +66,9 @@ export const Skills = () => {
     },
 
     ]
-    return (<div className={style.skills_block} id="skills">
+    return (
+        <Zoom left>
+        <div className={style.skills_block} id="skills">
         <div className={`${styleContainer.container} ${style.skills_container}`}>
             <h2 className={style.title}>My Skills</h2>
             <div className={style.skills}>
@@ -69,33 +76,38 @@ export const Skills = () => {
 
                     return (
                         display
-                            ? <>
-                            <span className={style.close} onClick={()=> {setDisplay(false)}}></span>
-                                <div className={display && e.id === desc ? style.description_container : style.display_none_for_desc}>
+                            ? <Flip left key={e.id}>
+                                <span className={style.close} onClick={() => {
+                                    setDisplay(false)
+                                }}></span>
+                                <div
+                                    className={display && e.id === desc ? style.description_container : style.display_none_for_desc}>
                                     <h3 className={style.title}>{e.id === desc && e.title}</h3>
                                     <span className={style.description}>
-                                {e.id === desc && e.description.map((el , index) => {
-                                    return (<ul className={style.list} key={el.length}>
+                                {e.id === desc && e.description.map((el, index) => {
+                                    return (<ul className={style.list} key={index}>
                                         <li className={style.list_item}>{el}</li>
                                     </ul>)
                                 })}
                                     </span>
                                 </div>
-                        </>
+                            </Flip>
                             :
-                            <>
+                                <Flip right key={e.id}>
                                 <div className={style.img_container} onClick={() => {
                                     setDisplay(true)
                                     setDesc(e.id)
                                 }}>
                                     <img src={e.skill_photo}/>
                                 </div>
-                        </>
+                                </Flip>
                     )
                 })}
             </div>
         </div>
-    </div>);
+    </div>
+                </Zoom>
+                );
 };
 
 

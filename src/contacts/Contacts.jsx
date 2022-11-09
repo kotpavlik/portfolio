@@ -7,6 +7,7 @@ import * as Yup from 'yup';
 import {ContactsAnimation} from "../components/lottie/lottie_animation";
 import 'react-phone-number-input/style.css';
 import axios from 'axios';
+import Particles from "react-tsparticles";
 
 
 export const Contacts = () => {

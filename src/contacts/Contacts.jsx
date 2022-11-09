@@ -7,7 +7,8 @@ import * as Yup from 'yup';
 import {ContactsAnimation} from "../components/lottie/lottie_animation";
 import 'react-phone-number-input/style.css';
 import axios from 'axios';
-import Particles from "react-tsparticles";
+import Zoom from "react-reveal/Zoom";
+
 
 
 export const Contacts = () => {
@@ -108,7 +109,9 @@ export const Contacts = () => {
                         <ProjectButton type={'submit'} name={'send'} buttonClassName={button_contacts}/>
                     </form>
                 </div>
-                <div className={style.lottie_animation}><ContactsAnimation/></div>
+                <Zoom right delay={1000}>
+                    <div className={style.lottie_animation}><ContactsAnimation/></div>
+                </Zoom>
             </div>
         </div>
     );

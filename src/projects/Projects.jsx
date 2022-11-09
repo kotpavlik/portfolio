@@ -7,6 +7,7 @@ import social_network from '../assets/projects_photo/social_network.png'
 import portfolio from '../assets/projects_photo/portfolio.png'
 import tg_bot from '../assets/projects_photo/tg_bot.png'
 
+
 export const Projects = () => {
 
     const myProjects = [

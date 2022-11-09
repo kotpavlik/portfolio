@@ -5,6 +5,7 @@ import full_screen_photo from '../assets/fuul_screen.JPG'
 import {ProjectButton} from '../components/projectButton'
 import {Link} from "react-scroll";
 import ReactTypingEffect from 'react-typing-effect';
+import Slide from "react-reveal/Slide";
 
 
 
@@ -16,7 +17,7 @@ export const Main = () => {
         <div style={full_screen} className={style.main} id="home">
             <div className={styleContainer.container}>
                 <div className={style.text}>
-                    <span>Hi there </span>
+                    <Slide top cascade><span>Hi there </span></Slide>
                     <h1> I am Igor Anufriev</h1>
                     <p>
                         <ReactTypingEffect text={['Frontend developer']}/>

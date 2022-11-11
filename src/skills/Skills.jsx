@@ -11,6 +11,7 @@ import ts_svg from '../assets/skills_svg/typescript-official-svgrepo-com.svg'
 import postman_svg from '../assets/skills_svg/postman_ico.svg'
 import heroku_svg from '../assets/skills_svg/heroku-logo-svgrepo-com.svg'
 import gitHub_svg from '../assets/skills_svg/github-octocat-svgrepo-com.svg'
+import NextJS from '../assets/skills_svg/nextjs-icon-svgrepo-com.svg'
 import "swiper/scss";
 import "swiper/scss/effect-coverflow";
 import "swiper/scss/pagination";
@@ -64,6 +65,12 @@ export const Skills = () => {
         description: ['git init', 'git clone', ' git add .', 'git commit -m"new commit"', 'git push', ' git fetch + git merge = git pull', 'git reset --hard head^', 'git checkout', 'git branch'],
         skill_photo: `${gitHub_svg}`
     },
+        {
+            id: 101,
+            title: 'NextJS',
+            description: ['API Routes','Shallow Routing','Next Image','Layouts','SSG'],
+            skill_photo: `${NextJS}`
+        }
 
     ]
     return (

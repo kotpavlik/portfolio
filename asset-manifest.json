@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.aec425b8.css",
-    "main.js": "/portfolio/static/js/main.9702cfbb.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/portfolio/static/css/main.6f8c340c.css",
+    "main.js": "/portfolio/static/js/main.7cf1386f.js",
+    "static/js/496.16f40a0b.chunk.js": "/portfolio/static/js/496.16f40a0b.chunk.js",
     "static/media/fuul_screen.JPG": "/portfolio/static/media/fuul_screen.d59a45f042eabef65d01.JPG",
     "static/media/distant_bg.jpg": "/portfolio/static/media/distant_bg.c17dba534d0edbcf8594.jpg",
     "static/media/social_network.png": "/portfolio/static/media/social_network.107c34573187fc6fef26.png",
@@ -23,12 +23,12 @@
     "static/media/telegram-svgrepo-com.svg": "/portfolio/static/media/telegram-svgrepo-com.8c45a8e3d6eb06eaddec5e722dbbafde.svg",
     "static/media/light-js-svgrepo-com.svg": "/portfolio/static/media/light-js-svgrepo-com.52dd35a56ee578f0af35c8d8a67ed864.svg",
     "index.html": "/portfolio/index.html",
-    "main.aec425b8.css.map": "/portfolio/static/css/main.aec425b8.css.map",
-    "main.9702cfbb.js.map": "/portfolio/static/js/main.9702cfbb.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.6f8c340c.css.map": "/portfolio/static/css/main.6f8c340c.css.map",
+    "main.7cf1386f.js.map": "/portfolio/static/js/main.7cf1386f.js.map",
+    "496.16f40a0b.chunk.js.map": "/portfolio/static/js/496.16f40a0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aec425b8.css",
-    "static/js/main.9702cfbb.js"
+    "static/css/main.6f8c340c.css",
+    "static/js/main.7cf1386f.js"
   ]
 }

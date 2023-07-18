@@ -18,7 +18,7 @@ export const Header = () => {
         })
     })
 
-
+console.log(nav);
     const changeBurger =()=> {
         setBurger(!burger)
     }

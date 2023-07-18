@@ -12,6 +12,8 @@ import postman_svg from '../assets/skills_svg/postman_ico.svg'
 import heroku_svg from '../assets/skills_svg/heroku-logo-svgrepo-com.svg'
 import gitHub_svg from '../assets/skills_svg/github-octocat-svgrepo-com.svg'
 import NextJS from '../assets/skills_svg/nextjs-icon-svgrepo-com.svg'
+import Jest from '../assets/skills_svg/jest-svgrepo-com.svg'
+import Storybook from '../assets/skills_svg/storybook-icon-svgrepo-com.svg'
 import "swiper/scss";
 import "swiper/scss/effect-coverflow";
 import "swiper/scss/pagination";
@@ -70,6 +72,17 @@ export const Skills = () => {
             title: 'NextJS',
             description: ['API Routes','Shallow Routing','Next Image','Layouts','SSG'],
             skill_photo: `${NextJS}`
+        }, {
+            id: 102,
+            title: 'Jest Test',
+            description: ['I checked thereact-modules','I checked the asyncThunk functions'],
+            skill_photo: `${Jest}`
+        },
+        {
+            id: 103,
+            title: 'Storybook',
+            description: ['I created and saved my react components'],
+            skill_photo: `${Storybook}`
         }
 
     ]

@@ -5,23 +5,23 @@ import {Project} from './project/Project'
 import todo_list from '../assets/projects_photo/todo_list.png'
 import social_network from '../assets/projects_photo/social_network.png'
 import portfolio from '../assets/projects_photo/portfolio.png'
-import tg_bot from '../assets/projects_photo/tg_bot.png'
+import calc_dnd from '../assets/projects_photo/drag_and_drop_calc.jpg'
+import cards_app from '../assets/projects_photo/cards.jpg'
 
 
 export const Projects = () => {
 
     const myProjects = [
         {
-            id: 1,
-            name: 'Social networks',
-            description: 'This social network is written in React. We take the data from the Social-Network Server API https://social-network.samuraijs.com . Communication with the API is established using the AXIOS library. The social network works with pagination, login, user data processing, as well as changing and deleting user data. ',
-            project_photo: `${social_network}`,
-            gh_pages:'https://kotpavlik.github.io/Ts-React-Redux/',
-            gh_code:'https://github.com/kotpavlik/Ts-React-Redux',
-            title: 'Used Technologies',
-            technologies:
-                'React, Redux, TypeScript, React-Redux, Redux-Thunk, Axios, Lottie animation, Ant design, formik, uyp, jest tests, react-router-dom 6^, gh-pages'
-        },
+        id: 1,
+            name: 'Cards Team Project',
+            description: 'This application works like a simple calculator but it\'s got drag and drop constructor.You can transfom your calculator as you wish but it\'s every stay simple calculator',
+            project_photo: `${cards_app}`,
+            gh_pages:'https://reni101.github.io/Cards-app/#/packs?search=&user_id=&min=0&max=6',
+            gh_code:'https://github.com/Reni101/Cards-app',
+            title:'Used Technologies',
+            technologies:'React | Redux Toolkit | TypeScript | MUI | Gh-Pages | SASS | Lotie Animation | Formik | Yup | Axios | React Router Dom 6 | Moment | Redux-Thunk | React-Redux | Socket.io-client '
+       },
         {
             id: 2,
             name: 'Todo List ',
@@ -44,15 +44,27 @@ export const Projects = () => {
         },
         {
             id: 4,
-            name: 'Telegram Bot For Portfolio Formik',
-            description: 'The Telegram bot was created to capture and send the data of potential employers to me in Telegram. Also, a simple game is written in the bot, if you are bored.',
-            project_photo: `${tg_bot}`,
-            gh_pages:'https://telegram-bot-for-portfolio.herokuapp.com/',
-            gh_code:'https://github.com/kotpavlik/telegram_bot',
+            name: 'Drag and drop Calculator',
+            description: 'This application works like a simple calculator but it\'s got drag and drop constructor.You can transfom your calculator as you wish but it\'s every stay simple calculator',
+            project_photo: `${calc_dnd}`,
+            gh_pages:'https://kotpavlik.github.io/calc_dnd_react_ts_jest/',
+            gh_code:'https://github.com/kotpavlik/calc_dnd_react_ts_jest',
             title:'Used Technologies',
-            technologies:'Node.js, nodemon, express, node-telegram-bot-api, cors, body-parser'
-        }
+            technologies:'React | Redux Toolkit | TypeScript | MUI | Gh-Pages | SASS | Drag and Drop '
+        },
+         {
+            id: 5,
+            name: 'Social networks',
+            description: 'This social network is written on React. We take the data from the Social-Network Server API https://social-network.samuraijs.com . Communication with the API is established using the AXIOS library. The social network works with pagination, login, user data processing, as well as changing and deleting user data. ',
+            project_photo: `${social_network}`,
+            gh_pages:'https://kotpavlik.github.io/Ts-React-Redux/',
+            gh_code:'https://github.com/kotpavlik/Ts-React-Redux',
+            title: 'Used Technologies',
+            technologies:
+                'React, Redux, TypeScript, React-Redux, Redux-Thunk, Axios, Lottie animation, Ant design, formik, uyp, jest tests, react-router-dom 6^, gh-pages'
+        },
 
+ 
     ]
     return (
         <div className={style.projects_block} id="projects">

@@ -2,10 +2,11 @@
 
 .header {
     height: 80px;
+    width:100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     transition-duration: 0.8s;
     text-transform: uppercase;

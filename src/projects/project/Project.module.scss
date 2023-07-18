@@ -1,54 +1,56 @@
 @import '../../common/styles/mixins';
 @import '../../common/styles/variables';
-
-
 .project {
-  position: relative;
-  min-height: 60vh;
-  margin: 10px 0;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  .parallax_bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.8;
-  }
-  .information_container {
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    background-color: $backgroundColor;
-    transition: all 1s;
+    position: relative;
+    min-height: 450px;
+    max-width: 500px;
+    margin: 10px 0;
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    transition: all .5s;
+    box-shadow: -5px 5px 8px rgb(133, 133, 133);
     &:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-      transition: all 0.5s;
+        transition: all .5s;
+        box-shadow: -10px 10px 25px rgb(169, 169, 169);
     }
-    .title {
-      color: white;
-     @include tittle(relative,visable,800,25px,0,1.4em,pointer);
-      text-shadow: 0.5px 0.5px 1px $primary-color;
+    .parallax_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.8;
     }
-    .description {
-      @include description(white,1.4em,10px 80px);
-      text-shadow: 0.3px 0.3px 0.5px $primary-color;
+    .information_container {
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        background-color: $backgroundColor;
+        transition: all 1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: all 0.5s;
+        }
+        .title {
+            color: white;
+            @include tittle(relative, visable, 800, 25px, 0, 1.4em, pointer);
+            text-shadow: 0.5px 0.5px 1px $primary-color;
+        }
+        .description {
+            @include description(white, 1.4em, 10px 80px);
+            text-shadow: 0.3px 0.3px 0.5px $primary-color;
+        }
+        .butt_container {
+            margin: 20px 0;
+        }
     }
-    .butt_container {
-      margin: 20px 0 ;
-    }
-  }
 }
-
-
-

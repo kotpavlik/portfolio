@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6f8c340c.css",
-    "main.js": "/portfolio/static/js/main.e25218af.js",
-    "static/js/496.16f40a0b.chunk.js": "/portfolio/static/js/496.16f40a0b.chunk.js",
+    "main.css": "/portfolio/static/css/main.715ea948.css",
+    "main.js": "/portfolio/static/js/main.9ef653ca.js",
+    "static/js/496.19847c0d.chunk.js": "/portfolio/static/js/496.19847c0d.chunk.js",
     "static/media/fuul_screen.JPG": "/portfolio/static/media/fuul_screen.d59a45f042eabef65d01.JPG",
     "static/media/distant_bg.jpg": "/portfolio/static/media/distant_bg.c17dba534d0edbcf8594.jpg",
     "static/media/social_network.png": "/portfolio/static/media/social_network.107c34573187fc6fef26.png",
-    "static/media/tg_bot.png": "/portfolio/static/media/tg_bot.6c3a492dc8356a80f42e.png",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.a0aded4dd9648b7ab483.png",
     "static/media/todo_list.png": "/portfolio/static/media/todo_list.54b9fcd5cc5d118a8f3d.png",
+    "static/media/cards.jpg": "/portfolio/static/media/cards.65bb31142948444f82fd.jpg",
+    "static/media/drag_and_drop_calc.jpg": "/portfolio/static/media/drag_and_drop_calc.851c3ed5ab2ec3c76917.jpg",
     "static/media/postman_ico.svg": "/portfolio/static/media/postman_ico.648705b5f6469f0767a4736d07313ffe.svg",
     "static/media/react-svgrepo-com.svg": "/portfolio/static/media/react-svgrepo-com.fdd3331d261ad6d5e1c92448737aa2aa.svg",
+    "static/media/jest-svgrepo-com.svg": "/portfolio/static/media/jest-svgrepo-com.1ba09f96f00b224697295e3a7d351dfc.svg",
     "static/media/github-octocat-svgrepo-com.svg": "/portfolio/static/media/github-octocat-svgrepo-com.0e794280fc38182dc880785f94c26e6d.svg",
     "static/media/instagram-2-1-logo-svgrepo-com.svg": "/portfolio/static/media/instagram-2-1-logo-svgrepo-com.b0c484b364dc559b8644b7f3d38ce69c.svg",
     "static/media/redux-svgrepo-com.svg": "/portfolio/static/media/redux-svgrepo-com.609190d142776d97540d56376fce6a2c.svg",
     "static/media/sass-svgrepo-com.svg": "/portfolio/static/media/sass-svgrepo-com.3b0c24f0b91beef690074ec585746041.svg",
     "static/media/nextjs-icon-svgrepo-com.svg": "/portfolio/static/media/nextjs-icon-svgrepo-com.bfb23e822fc36bcdb6ef5e563dd35342.svg",
+    "static/media/storybook-icon-svgrepo-com.svg": "/portfolio/static/media/storybook-icon-svgrepo-com.c143760c5be7f175b06e6be31349892f.svg",
     "static/media/css-svgrepo-com.svg": "/portfolio/static/media/css-svgrepo-com.d8d3d071fa0f4a37e273ab6742b2b6a0.svg",
     "static/media/heroku-logo-svgrepo-com.svg": "/portfolio/static/media/heroku-logo-svgrepo-com.f352d37080baa7546ea02f188f7c2157.svg",
     "static/media/linkedin-svgrepo-com.svg": "/portfolio/static/media/linkedin-svgrepo-com.5060e5e65d1b5cad6a357964e2387078.svg",
@@ -24,12 +27,12 @@
     "static/media/telegram-svgrepo-com.svg": "/portfolio/static/media/telegram-svgrepo-com.8c45a8e3d6eb06eaddec5e722dbbafde.svg",
     "static/media/light-js-svgrepo-com.svg": "/portfolio/static/media/light-js-svgrepo-com.52dd35a56ee578f0af35c8d8a67ed864.svg",
     "index.html": "/portfolio/index.html",
-    "main.6f8c340c.css.map": "/portfolio/static/css/main.6f8c340c.css.map",
-    "main.e25218af.js.map": "/portfolio/static/js/main.e25218af.js.map",
-    "496.16f40a0b.chunk.js.map": "/portfolio/static/js/496.16f40a0b.chunk.js.map"
+    "main.715ea948.css.map": "/portfolio/static/css/main.715ea948.css.map",
+    "main.9ef653ca.js.map": "/portfolio/static/js/main.9ef653ca.js.map",
+    "496.19847c0d.chunk.js.map": "/portfolio/static/js/496.19847c0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f8c340c.css",
-    "static/js/main.e25218af.js"
+    "static/css/main.715ea948.css",
+    "static/js/main.9ef653ca.js"
   ]
 }
